@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS 1
 #define  _CRT_SECURE_NO_WARNING
  //写代码
 //1.写出主函数（main函数）
@@ -103,15 +104,29 @@
 ////%f-float
 
 //全局变量在{}外面定义的
-int a = 100;
+//int a = 100;
+//
+//int main()
+//{
+//	//局部变量在{}内部定义的
+//	//当局部变量和全局变量名字冲突的情况下，局部优先
+//	//不建议把全局变量和局部变量的名字一致
+//	int a = 10;
+//	printf("%d\n", a);
+//	return 0;
+//}
+//
 
+//写一个代码求2个整数的和
+//scanf函数是输入函数
 int main()
 {
-	//局部变量在{}内部定义的
-	//当局部变量和全局变量名字冲突的情况下，局部优先
-	//不建议把全局变量和局部变量的名字一致
-	int a = 10;
-	printf("%d\n", a);
+	int a = 0;
+	int b = 0;
+	int sum = 0;
+	scanf("%d %d", &a, &b);
+	sum = a + b;
+	printf("sum=%d\n", sum);
 	return 0;
-}
 
+}
